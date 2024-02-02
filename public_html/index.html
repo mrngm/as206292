@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- shamelessly copied from the old index of as286.net, albeit a bit modernized -->
+
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <title>AS206292 / GHCMNET</title>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    @media screen and (min-width: 300px) and (max-width: 599px) {
+      body {
+        font-size: 12px;
+        width: 95%;
+      }
+      ul#menu {
+        flex-direction: column;
+      }
+      ul#menu li {
+        padding: 0.4em 0 0.4em 0;
+        font-size: 1.5em;
+      }
+      div#top {
+        padding-bottom: 0;
+      }
+    }
+    @media screen and (min-width: 600px) and (max-width: 899px) {
+      body {
+        font-size: 15px;
+        width: 90%;
+      }
+      ul#menu {
+        flex-direction: row;
+      }
+      ul#menu li {
+        padding: 0 0.5em 0.4em 0.5em;
+      }
+      div#top {
+        padding-bottom: 1.2em;
+      }
+    }
+    @media screen and (min-width: 900px) and (max-width: 1199px) {
+      body {
+        font-size: 15px;
+        width: 85%;
+      }
+      ul#menu {
+        flex-direction: row;
+      }
+      ul#menu li {
+        padding: 0 0.5em 0.4em 0.5em;
+      }
+      div#top {
+        padding-bottom: 1.2em;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      body {
+        font-size: 17px;
+        width: 80%;
+      }
+      ul#menu {
+        flex-direction: row;
+      }
+      ul#menu li {
+        padding: 0 0.5em 0 0.5em;
+      }
+      div#top {
+        padding-bottom: 2em;
+      }
+    }
+
+    body {
+      font-family: "Courier New", Courier, monospace;
+      margin: auto;
+      background-color: white;
+    }
+
+    a {
+      color: blue;
+    }
+
+    div#top {
+      padding-top: 0.5em;
+      font-size: 0.8em;
+      line-height: 1.2em;
+      text-align: center;
+      width: 100%;
+    }
+
+    div#logo {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+    div#logo h1 {
+      font-size: 2.5em;
+      text-align: center;
+      margin: 0;
+    }
+
+    div#logo h2 {
+      font-size: 0.8em;
+      font-weight: normal;
+      text-align: center;
+      margin: 0;
+    }
+
+    ul#menu {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    ul#menu li {
+      margin: 0;
+      list-style-type: none;
+    }
+    div#content h1, div#content h2 {
+      text-decoration: underline;
+    }
+
+    h2 a.pilcrow, h3 a.pilcrow {
+      display: inline-block;
+      margin-left: 0.4em;
+      transition: all .3s;
+      vertical-align: middle;
+      font-size: 2ex;
+    }
+    h2:hover a.pilcrow, h2:active a.pilcrow, h2 a.pilcrow:hover h2 a.pilcrow:active,
+    h3:hover a.pilcrow, h3:active a.pilcrow, h3 a.pilcrow:hover h3 a.pilcrow:active {
+      color: blue;
+    }
+    a.pilcrow {
+      color: lightgrey;
+      text-decoration: none;
+    }
+    a.pilcrow::before {
+      content: "¶";
+    }
+
+    a.menu {
+      white-space: nowrap;
+    }
+    a.menu::before {
+      content: "[";
+    }
+    a.menu::after {
+      content: "]";
+    }
+    a.menu-ext::after {
+      content: " 🡕]";
+    }
+    a.external::after {
+      content: " 🡕";
+    }
+  </style>
+</head>
+<body>
+  <div id="top">
+    <ul id="menu">
+      <li><a class="menu" href="#top" title="Main">Main</a></li>
+      <li><a class="menu" href="#peering-policy" title="Peering Policy">Peering Policy</a></li>
+      <!-- <li><a class="menu" href="#routing-policy" title="Routing Policy">Routing Policy</a></li> -->
+      <!-- <li><a class="menu" href="#filtering-policy" title="Filtering Policy">Filtering Policy</a></li> -->
+      <li><a class="menu" href="#communities" title="Communities">Communities</a></li>
+      <li><a class="menu" href="#contact" title="Contact">Contact</a></li>
+      <li><a class="menu menu-ext" href="https://as206292.peeringdb.com/" title="PeeringDB" target="_blank">PeeringDB</a></li>
+    </ul>
+  </div>
+
+  <div id="logo">
+    <h1>AS206292 / GHCMNET</h1>
+    <h2>v20230830</h2>
+  </div>
+
+  <div id="content">
+    <h2>Introduction</h2>
+      <p>AS206292 is an IPv6-only educational network. We currently announce <tt>2001:67c:994::/48</tt> thanks to
+      <a class="external" href="https://coloclue.net/">Netwerkvereniging ColoClue</a> and <a class="external" href="https://netshelter.org/">netShelter</a>.</p>
+
+    <h2 id="peering-policy">Peering Policy<a class="pilcrow" href="#peering-policy"></a></h2>
+      <p>AS206292 is open to peering at any location we have a physical or virtual presence. Our <a class="external" href="https://as206292.peeringdb.com/">PeeringDB record</a>
+      contains the most up to date information regarding those locations (if they are also on PeeringDB), prefix limits, traffic levels, etc.</p>
+
+      <h3 id="peering-locations">Peering Locations<a class="pilcrow" href="#peering-locations"></a></h3>
+        <p>We currently peer at <a class="external" href="https://www.netshelter.org/infrastructure/internet-exchange/amsterdam-members/">MOSS-IX (AMS)</a> and
+        <a class="external" href="https://fogixp.org/">FogIXP (NIKHEF)</a>.
+
+    <!-- <h2 id="routing-policy">Routing Policy<a class="pilcrow" href="#routing-policy"></a></h2> -->
+
+    <!-- <h2 id="filtering-policy">Filtering Policy<a class="pilcrow" href="#filtering-policy"></a></h2> -->
+
+    <h2 id="communities">BGP Communities<a class="pilcrow" href="#communities"></a></h2>
+      <p>TBD</p>
+
+    <h2 id="contact">Contact<a class="pilcrow" href="#contact"></a></h2>
+      <p>We are reachable through e-mail: <tt>noc-ghcmnet</tt><tt>@</tt><tt>moeilijklastig.nl</tt>, or on various IRC networks
+         (IRCnet, Libera.chat, OFTC, ...) using the handle <tt>mrngm</tt>.</p>
+  </div>
+
+</body>
+</html>
+
+<!-- vim: set et ts=2 sw=2: -->
