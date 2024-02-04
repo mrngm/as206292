@@ -1,0 +1,14 @@
+lo: mac 00:00:00:00:00:00
+lo: 127.0.0.1/8 scope host
+lo: ::1/128 scope host
+lo: 2001:67c:994::feff:4/128 scope global
+
+ens18: # iFog AMS (OOB)
+ens18: mac 2e:7a:22:c1:4e:14
+ens18: 193.148.248.240/26 scope global
+ens18: route default via 193.148.248.193
+
+ens19: # NL-IX
+ens19: mac b6:18:e6:d9:3f:57
+ens19: 193.239.119.30/22 scope global
+ens19: 2001:7f8:13::a520:6292:1/64 scope global

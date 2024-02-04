@@ -11,6 +11,7 @@ ens18: route default via 2a0e:a6c2:0:2200:45:137:185:1 table 42
 
 ens19: # MOSS-IX AMS
 ens19: mac ea:25:ec:c6:f0:8f
+ens19: 185.1.140.21/24 scope global
 ens19: 2001:7f8:a9::a520:6292:1/64 scope global
 
 ens20: # FogIXP via netShelter trunk on extension-switch-NIKHEF
