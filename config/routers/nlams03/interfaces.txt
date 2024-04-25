@@ -1,0 +1,23 @@
+hosttype: openbsd
+
+# Loopback is defined by default, whereas rdomain-specific loopbacks may be
+# configured explicitly through /etc/hostname.loNNN
+
+cnmac3: # EdgeRouter port "eth7"
+cnmac3: mac 24:a4:3c:3c:8d:61
+cnmac3: mtu 9000
+cnmac3: rdomain 93
+
+vlan105: # EdgeRouter "eth7" with VLAN 105, ColoClue
+vlan105: parent cnmac3 vlanid 105
+vlan105: rdomain 83
+vlan105: 185.52.225.39/28
+vlan105: 2a02:898:0:1::284:1/64
+
+vlan418: # EdgeRouter "eth7" with VLAN 418, Frys-IX
+vlan418: parent cnmac3 vlanid 418
+vlan418: rdomain 203
+
+lo92: # Loopback for AS206292
+lo92: rdomain 92
+lo92: 2001:67c:994::feff:5/128

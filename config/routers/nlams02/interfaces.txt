@@ -1,3 +1,5 @@
+hosttype: debian
+
 lo: mac 00:00:00:00:00:00
 lo: 127.0.0.1/8 scope host
 lo: ::1/128 scope host
